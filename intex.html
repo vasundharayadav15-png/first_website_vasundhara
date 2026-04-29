@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Class 10 NCERT CBSE Science - Complete study material including chapter notes, exercise questions, previous year questions, and board exam predictions." />
+  <title>ScienceX10 — CBSE Class 10 Science Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⚗️</span>
+        <span class="logo-text">Science<span class="logo-accent">X10</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#chapters" class="nav-link" data-section="chapters">Chapters</a></li>
+        <li><a href="#pyq" class="nav-link" data-section="pyq">PYQ</a></li>
+        <li><a href="#predict" class="nav-link" data-section="predict">Predictions</a></li>
+        <li><a href="#quiz" class="nav-link" data-section="quiz">Quiz</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="particle" style="--x:10%;--y:20%;--d:6s;--s:6px;--c:#7c3aed;"></div>
+      <div class="particle" style="--x:85%;--y:15%;--d:8s;--s:4px;--c:#06b6d4;"></div>
+      <div class="particle" style="--x:30%;--y:70%;--d:5s;--s:8px;--c:#10b981;"></div>
+      <div class="particle" style="--x:70%;--y:80%;--d:7s;--s:5px;--c:#f59e0b;"></div>
+      <div class="particle" style="--x:50%;--y:40%;--d:9s;--s:3px;--c:#ec4899;"></div>
+      <div class="particle" style="--x:20%;--y:90%;--d:6s;--s:7px;--c:#7c3aed;"></div>
+      <div class="particle" style="--x:90%;--y:60%;--d:4s;--s:5px;--c:#06b6d4;"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">📚 NCERT · CBSE · Class 10</div>
+      <h1 class="hero-title">
+        Master <span class="gradient-text">Science</span><br/>
+        Ace Your <span class="gradient-text-2">Board Exam</span>
+      </h1>
+      <p class="hero-sub">Complete study material — concise notes, NCERT exercises, previous year questions &amp; board exam predictions. All chapters. Zero cost.</p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">16</span>
+          <span class="stat-label">Chapters</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">PYQ Years</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#chapters" class="btn-primary">Explore Chapters</a>
+        <a href="#pyq" class="btn-secondary">PYQ Bank</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring-1">
+        <div class="orbit-dot" style="--color:#7c3aed;">⚛️</div>
+      </div>
+      <div class="orbit-ring ring-2">
+        <div class="orbit-dot" style="--color:#06b6d4;">🧪</div>
+      </div>
+      <div class="orbit-ring ring-3">
+        <div class="orbit-dot" style="--color:#10b981;">🔬</div>
+      </div>
+      <div class="center-atom">🧬</div>
+    </div>
+  </section>
+
+  <!-- SUBJECT AREAS -->
+  <section class="subjects-strip">
+    <div class="container">
+      <div class="subject-pill physics">⚡ Physics</div>
+      <div class="subject-pill chemistry">🧪 Chemistry</div>
+      <div class="subject-pill biology">🌿 Biology</div>
+    </div>
+  </section>
+
+  <!-- CHAPTERS SECTION -->
+  <section class="section chapters-section" id="chapters">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">📖 Study Material</span>
+        <h2 class="section-title">All Chapters</h2>
+        <p class="section-sub">Click any chapter to access concise notes, NCERT exercises &amp; solved examples</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="physics">⚡ Physics</button>
+        <button class="filter-btn" data-filter="chemistry">🧪 Chemistry</button>
+        <button class="filter-btn" data-filter="biology">🌿 Biology</button>
+      </div>
+
+      <!-- Chapter Cards Grid -->
+      <div class="chapters-grid" id="chaptersGrid">
+
+        <!-- PHYSICS CHAPTERS -->
+        <div class="chapter-card" data-subject="physics" data-chapter="1" onclick="openChapter(1)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 1</span>
+            <span class="subject-tag physics-tag">⚡ Physics</span>
+          </div>
+          <h3>Light — Reflection &amp; Refraction</h3>
+          <p>Laws of reflection, mirror formula, refraction, lens formula, power of lens</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 8 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="physics" data-chapter="2" onclick="openChapter(2)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 2</span>
+            <span class="subject-tag physics-tag">⚡ Physics</span>
+          </div>
+          <h3>Human Eye &amp; Colourful World</h3>
+          <p>Power of accommodation, defects of vision, atmospheric refraction, dispersion</p>
+          <div class="card-footer">
+            <span class="difficulty medium">Medium Weightage</span>
+            <span class="marks">⭐ 5 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="physics" data-chapter="3" onclick="openChapter(3)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 3</span>
+            <span class="subject-tag physics-tag">⚡ Physics</span>
+          </div>
+          <h3>Electricity</h3>
+          <p>Ohm's Law, resistance, combination of resistors, Joule's heating, electric power</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 8 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="physics" data-chapter="4" onclick="openChapter(4)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 4</span>
+            <span class="subject-tag physics-tag">⚡ Physics</span>
+          </div>
+          <h3>Magnetic Effects of Electric Current</h3>
+          <p>Oersted experiment, magnetic field, electric motor, electromagnetic induction, generator</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 7 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="physics" data-chapter="5" onclick="openChapter(5)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 5</span>
+            <span class="subject-tag physics-tag">⚡ Physics</span>
+          </div>
+          <h3>Sources of Energy</h3>
+          <p>Conventional &amp; non-conventional sources, fossil fuels, nuclear energy, solar energy</p>
+          <div class="card-footer">
+            <span class="difficulty easy">Low Weightage</span>
+            <span class="marks">⭐ 3 marks</span>
+          </div>
+        </div>
+
+        <!-- CHEMISTRY CHAPTERS -->
+        <div class="chapter-card" data-subject="chemistry" data-chapter="6" onclick="openChapter(6)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 6</span>
+            <span class="subject-tag chemistry-tag">🧪 Chemistry</span>
+          </div>
+          <h3>Chemical Reactions &amp; Equations</h3>
+          <p>Types of chemical reactions, balancing equations, oxidation-reduction, corrosion, rancidity</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 7 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="chemistry" data-chapter="7" onclick="openChapter(7)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 7</span>
+            <span class="subject-tag chemistry-tag">🧪 Chemistry</span>
+          </div>
+          <h3>Acids, Bases &amp; Salts</h3>
+          <p>Properties of acids &amp; bases, pH scale, preparation of salts, bleaching powder, baking soda</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 8 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="chemistry" data-chapter="8" onclick="openChapter(8)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 8</span>
+            <span class="subject-tag chemistry-tag">🧪 Chemistry</span>
+          </div>
+          <h3>Metals &amp; Non-Metals</h3>
+          <p>Physical &amp; chemical properties, reactivity series, extraction of metals, corrosion prevention</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 7 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="chemistry" data-chapter="9" onclick="openChapter(9)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 9</span>
+            <span class="subject-tag chemistry-tag">🧪 Chemistry</span>
+          </div>
+          <h3>Carbon &amp; Its Compounds</h3>
+          <p>Covalent bonding, versatile nature of carbon, homologous series, nomenclature, reactions</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 8 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="chemistry" data-chapter="10" onclick="openChapter(10)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 10</span>
+            <span class="subject-tag chemistry-tag">🧪 Chemistry</span>
+          </div>
+          <h3>Periodic Classification of Elements</h3>
+          <p>Döbereiner's triads, Newlands' law, Mendeleev's periodic table, Modern periodic law</p>
+          <div class="card-footer">
+            <span class="difficulty medium">Medium Weightage</span>
+            <span class="marks">⭐ 5 marks</span>
+          </div>
+        </div>
+
+        <!-- BIOLOGY CHAPTERS -->
+        <div class="chapter-card" data-subject="biology" data-chapter="11" onclick="openChapter(11)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 11</span>
+            <span class="subject-tag biology-tag">🌿 Biology</span>
+          </div>
+          <h3>Life Processes</h3>
+          <p>Nutrition, respiration, transportation, excretion in plants and animals, photosynthesis</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 10 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="biology" data-chapter="12" onclick="openChapter(12)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 12</span>
+            <span class="subject-tag biology-tag">🌿 Biology</span>
+          </div>
+          <h3>Control &amp; Coordination</h3>
+          <p>Nervous system, reflex action, hormones in animals &amp; plants, endocrine glands</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 8 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="biology" data-chapter="13" onclick="openChapter(13)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 13</span>
+            <span class="subject-tag biology-tag">🌿 Biology</span>
+          </div>
+          <h3>How Do Organisms Reproduce?</h3>
+          <p>Asexual reproduction, sexual reproduction in plants &amp; animals, reproductive health</p>
+          <div class="card-footer">
+            <span class="difficulty medium">Medium Weightage</span>
+            <span class="marks">⭐ 6 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="biology" data-chapter="14" onclick="openChapter(14)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 14</span>
+            <span class="subject-tag biology-tag">🌿 Biology</span>
+          </div>
+          <h3>Heredity &amp; Evolution</h3>
+          <p>Mendel's experiments, sex determination, evolution, Darwin's theory, human evolution</p>
+          <div class="card-footer">
+            <span class="difficulty hard">High Weightage</span>
+            <span class="marks">⭐ 7 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="biology" data-chapter="15" onclick="openChapter(15)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 15</span>
+            <span class="subject-tag biology-tag">🌿 Biology</span>
+          </div>
+          <h3>Our Environment</h3>
+          <p>Ecosystem, food chain &amp; food web, ozone layer depletion, garbage management</p>
+          <div class="card-footer">
+            <span class="difficulty easy">Low Weightage</span>
+            <span class="marks">⭐ 3 marks</span>
+          </div>
+        </div>
+
+        <div class="chapter-card" data-subject="biology" data-chapter="16" onclick="openChapter(16)">
+          <div class="card-glow"></div>
+          <div class="card-header">
+            <span class="chapter-num">Ch 16</span>
+            <span class="subject-tag biology-tag">🌿 Biology</span>
+          </div>
+          <h3>Sustainable Management of Natural Resources</h3>
+          <p>Forest resources, water management, coal &amp; petroleum conservation, the 5 R's</p>
+          <div class="card-footer">
+            <span class="difficulty easy">Low Weightage</span>
+            <span class="marks">⭐ 3 marks</span>
+          </div>
+        </div>
+
+      </div><!-- end grid -->
+    </div>
+  </section>
+
+  <!-- CHAPTER MODAL -->
+  <div class="modal-overlay" id="chapterModal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeChapterModal()">✕</button>
+      <div class="modal-tabs">
+        <button class="modal-tab active" onclick="switchTab('notes',this)">📝 Notes</button>
+        <button class="modal-tab" onclick="switchTab('exercise',this)">📋 Exercises</button>
+        <button class="modal-tab" onclick="switchTab('pyq_ch',this)">🏆 PYQ</button>
+      </div>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- PYQ SECTION -->
+  <section class="section pyq-section" id="pyq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🏆 Previous Year Questions</span>
+        <h2 class="section-title">PYQ Bank</h2>
+        <p class="section-sub">Actual questions from CBSE Board Exams (2014–2024) — sorted by chapter &amp; marks</p>
+      </div>
+
+      <div class="pyq-filters">
+        <select class="pyq-select" id="pyqChapter" onchange="filterPYQ()">
+          <option value="all">All Chapters</option>
+          <option value="light">Light</option>
+          <option value="electricity">Electricity</option>
+          <option value="magnetism">Magnetism</option>
+          <option value="chemical">Chemical Reactions</option>
+          <option value="acids">Acids, Bases &amp; Salts</option>
+          <option value="metals">Metals &amp; Non-Metals</option>
+          <option value="carbon">Carbon Compounds</option>
+          <option value="life">Life Processes</option>
+          <option value="control">Control &amp; Coordination</option>
+          <option value="heredity">Heredity &amp; Evolution</option>
+        </select>
+        <select class="pyq-select" id="pyqMarks" onchange="filterPYQ()">
+          <option value="all">All Marks</option>
+          <option value="1">1 Mark</option>
+          <option value="2">2 Marks</option>
+          <option value="3">3 Marks</option>
+          <option value="5">5 Marks</option>
+        </select>
+        <select class="pyq-select" id="pyqYear" onchange="filterPYQ()">
+          <option value="all">All Years</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+        </select>
+      </div>
+
+      <div class="pyq-list" id="pyqList">
+        <!-- Dynamically rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PREDICTIONS SECTION -->
+  <section class="section predict-section" id="predict">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🔮 Board Exam Predictions</span>
+        <h2 class="section-title">Most Expected Questions</h2>
+        <p class="section-sub">Based on CBSE trend analysis — high probability questions for upcoming board exams</p>
+      </div>
+
+      <div class="predict-grid" id="predictGrid">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUIZ SECTION -->
+  <section class="section quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">🧠 Test Yourself</span>
+        <h2 class="section-title">Quick Quiz</h2>
+        <p class="section-sub">MCQ based practice — simulate board exam environment</p>
+      </div>
+
+      <div class="quiz-container" id="quizContainer">
+        <div class="quiz-header-bar">
+          <span id="quizProgress">Question 1 of 10</span>
+          <span id="quizScore">Score: 0</span>
+          <div class="quiz-timer-bar">
+            <div class="quiz-timer-fill" id="timerFill"></div>
+          </div>
+        </div>
+        <div class="quiz-question" id="quizQuestion"></div>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-nav">
+          <button class="btn-quiz-nav" id="nextBtn" onclick="nextQuestion()" style="display:none;">Next →</button>
+        </div>
+        <div class="quiz-result" id="quizResult" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">⚗️</span>
+          <span class="logo-text">Science<span class="logo-accent">X10</span></span>
+          <p>Free CBSE Class 10 Science study portal. Built for students, by students.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Access</h4>
+          <a href="#chapters">All Chapters</a>
+          <a href="#pyq">PYQ Bank</a>
+          <a href="#predict">Predictions</a>
+          <a href="#quiz">Quiz</a>
+        </div>
+        <div class="footer-subjects">
+          <h4>Subjects</h4>
+          <a href="#chapters">⚡ Physics</a>
+          <a href="#chapters">🧪 Chemistry</a>
+          <a href="#chapters">🌿 Biology</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 ScienceX10 · Content based on NCERT Class 10 Science (CBSE) · For educational purposes</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
